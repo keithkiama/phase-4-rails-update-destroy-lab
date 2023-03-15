@@ -18,7 +18,7 @@ class PlantsController < ApplicationController
     render json: plant, status: :created
   end
 
-  PATCH /plants/:id
+  # PATCH /plants/:id
   def update
     plant = Plant.find_by(id: params[:id])
     if plant
